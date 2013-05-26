@@ -1,7 +1,7 @@
-CC=i386-elf-gcc
-LD=i386-elf-ld
+CC=gcc -m32
+LD=ld -melf_i386
 RUSTC=rustc
-NASM=nasm
+NASM=nasm -f elf32
 QEMU=qemu-system-i386
 
 all: floppy.img
